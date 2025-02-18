@@ -31,7 +31,7 @@ async def savegroup_and_welcome(bot, message):
             except: pass
             return await bot.leave_chat(message.chat.id)
            
-        buttons = [[InlineKeyboardButton('Hᴇʟᴩ', url=f"https://t.me/{temp.U_NAME}?start=help")]]
+        buttons = [[InlineKeyboardButton('Hᴇʟᴩ', url="https://t.me/+JQeou0PAx_Y0ZGFl")]]
         await message.reply(text="❤️ Tʜᴀɴᴋs Tᴏ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜ'ʀ Gʀᴏᴜᴘ.\n» Dᴏɴ'ᴛ Fᴏʀɢᴇᴛ Tᴏ Mᴀᴋᴇ Mᴇ Aᴅᴍɪɴ.\n» Is Aɴʏ Dᴏᴜʙᴛ's Aʙᴏᴜᴛ Usɪɴɢ Mᴇ Cʟɪᴄᴋ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴ...✨", reply_markup=InlineKeyboardMarkup(buttons))
     else:
         for u in message.new_chat_members:
@@ -100,7 +100,7 @@ async def re_enable_chat(bot, message):
     await message.reply("Cʜᴀᴛ Sᴜᴄᴄᴇꜱꜰᴜʟʟʏ Rᴇ-Eɴᴀʙʟᴇᴅ")
 
 
-@Client.on_message(filters.command('stats') & filters.incoming)
+@Client.on_message(filters.command('sree') & filters.incoming)
 async def get_ststs(bot, message):
     rju = await message.reply('<b>Pʟᴇᴀꜱᴇ Wᴀɪᴛ...</b>')
     total_users = await db.total_users_count()
@@ -297,7 +297,7 @@ async def user_info(client, message):
         )
     await status_message.delete()
 
-@Client.on_message(filters.command(["imdb", 'search']))
+@Client.on_message(filters.command(["im", 'sea']))
 async def imdb_search(client, message):
     if ' ' in message.text:
         k = await message.reply('ꜱᴇᴀʀᴄʜɪɴɢ ɪᴍᴅʙ..')
