@@ -36,7 +36,7 @@ DATABASE_URL = environ.get('DATABASE_URL', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'fucking_filea')
 
 # Filters Configuration 
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
@@ -46,7 +46,7 @@ FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', script.FORCE_SUB_TEXT)
 
 WELCOM_PIC = environ.get("WELCOM_PIC", "")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", script.WELCOM_TEXT)
-PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
+PMFILTER = is_enabled(environ.get('PMFILTER', "False"), True)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
 BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
 RemoveBG_API = environ.get("RemoveBG_API", "")
@@ -67,12 +67,12 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_name}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
+SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
-MELCOW_NEW_USERS = is_enabled(environ.get('MELCOW_NEW_USERS', "True"), True)
+MELCOW_NEW_USERS = is_enabled(environ.get('MELCOW_NEW_USERS', "False"), True)
 PROTECT_CONTENT = is_enabled(environ.get('PROTECT_CONTENT', "False"), False)
-PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "True"), True)
+PUBLIC_FILE_STORE = is_enabled(environ.get('PUBLIC_FILE_STORE', "False"), True)
 LOG_MSG = "{} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ....✨\n\n🗓️ Dᴀᴛᴇ : {}\n⏰ Tɪᴍᴇ : {}\n\n🖥️ Rᴇᴏᴩ: {}\n🉐 Vᴇʀsɪᴏɴ: {}\n🧾 Lɪᴄᴇɴꜱᴇ: {}\n©️ Cᴏᴩʏʀɪɢʜᴛ: {}"
 
 
